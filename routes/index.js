@@ -9,7 +9,7 @@ const routes = [
 
 const setRoutes = (app) => {
     routes.forEach(route => {
-        app.use(route.path, route.router)
+        app.use(`/api${route.path}`, route.router)
     })
 }
 
